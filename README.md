@@ -40,12 +40,18 @@ pra ver se não precisa isntalar o pacote abaixo?
     dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.1
 
 
-
-https://github.com/gavilanch/example-scaffolding-with-dotnet-cli
-
 Baseado nos seguintes Tutoriais:
 
     https://www.youtube.com/watch?v=knCH5cEo-Vo
     https://gavilan.blog/2018/04/28/asp-net-core-2-doing-scaffolding-with-dotnet-cli-aspnet-codegenerator/
     https://github.com/gavilanch/example-scaffolding-with-dotnet-cli
 
+
+COMANDS:
+
+    dotnet aspnet-codegenerator controller -name PeopleController -actions -m Person -dc ApplicationDbContext -outDir Controllers
+
+    dotnet aspnet-codegenerator controller -name CategoriaController -actions -m Categoria -dc Context -outDir Controllers
+
+
+END README.
