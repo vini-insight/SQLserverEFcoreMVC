@@ -24,12 +24,14 @@ Dependencias:
 
 
 EFcore --version 3.1.3 INSTALADO GLOBALMENTE:
+    
+    dotnet tool install --global dotnet-ef --version 3.1.3
+
+MIGRATIONS AND UPDATE DATABASE
 
     dotnet ef migrations add CreateDatabase
 
     dotnet ef database update
-
-
 
 tentar instalar globalmente
 
@@ -45,6 +47,8 @@ Baseado nos seguintes Tutoriais:
     https://www.youtube.com/watch?v=knCH5cEo-Vo
     https://gavilan.blog/2018/04/28/asp-net-core-2-doing-scaffolding-with-dotnet-cli-aspnet-codegenerator/
     https://github.com/gavilanch/example-scaffolding-with-dotnet-cli
+    https://github.com/Clavico/CursoDigitalOne
+    https://github.com/Clavico/CursoDigitalOne/tree/master/CursoMVC
 
 
 COMANDS:
@@ -53,5 +57,16 @@ COMANDS:
 
     dotnet aspnet-codegenerator controller -name CategoriaController -actions -m Categoria -dc Context -outDir Controllers
 
+    dotnet aspnet-codegenerator controller -name ProdutoController -actions -m Produto -dc Context -outDir Controllers
+
 
 END README.
+
+acessível em: 
+
+    https://localhost:5001/
+
+    https://localhost:5001/Produto
+    
+    https://localhost:5001/produto/Create
+
